@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <input type="number1" id="sub1"/>
+    <input type="number2" id="sub2"/>
+    <input type="number3" id="sub3"/>
+    <input type="number4" id="sub4"/>
+    <button onclick="result()">submit</button>
+  </body>
+  <script>
+    function result(){
+      let p=document.getElementById('sub1').value;
+      let pvalue =parseInt(p);
+      let q=document.getElementById('sub2').value;
+      let qvalue=parseInt(q);
+      let r=document.getElementById('sub3').value;
+      let rvalue=parseInt(r);
+      let s=document.getElementById('sub4').value;
+      let svalue=parseInt(s);
+      const preRes=(pvalue>=40 && pvalue<=100)&&(qvalue>=40 && qvalue<=100)&&(rvalue>=40 && rvalue<=100)&&(rvalue>=40 && rvalue<=100);
+      //const res=pvalue+qvalue+rvalue+svalue;
+     // const finres=res>=200 && preRes>=40;
+      confirm(preRes);
+    }
+    </script>
+  
+
+</html>

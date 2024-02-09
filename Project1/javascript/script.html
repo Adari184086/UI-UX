@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>script</title>
+</head>
+<body>
+<form>
+    <input type="" id="fn"/>
+    <input type="" id="sn"/>
+    <button onclick="subbtn()">+</button>
+    <button onclick="substraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">/</button>
+    </form>
+    <script>
+        function subbtn()
+        {
+            let x=document.getElementById('fn').value;
+            let xvalue=parseInt(x);
+            let y=document.getElementById('sn').value;
+            let yvalue=parseInt(y);
+            const z=xvalue+yvalue;
+            confirm(z);
+        }
+        function subtraction()
+        {
+            let x=document.getElementById('fn').value;
+            let xvalue=parseInt(x);
+            let y=document.getElementById('sn').value;
+            let yvalue=parseInt(y);
+            const z=xvalue-yvalue;
+            confirm(z);
+        }
+        function multiplication()
+        {
+            let x=document.getElementById('fn').value;
+            let xvalue=parseInt(x);
+            let y=document.getElementById('sn').value;
+            let yvalue=parseInt(y);
+            const z=xvalue*yvalue;
+            confirm(z);
+        }
+        function division()
+        {
+            let x=document.getElementById('fn').value;
+            let xvalue=parseInt(x);
+            let y=document.getElementById('sn').value;
+            let yvalue=parseInt(y);
+            const z=xvalue/yvalue;
+            confirm(z);
+        }
+    </script>
+</body>
+</html>

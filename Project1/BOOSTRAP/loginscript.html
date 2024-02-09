@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LoginScript</title>
+    <style>
+      .image{
+        
+         background-image:url(https://static.vecteezy.com/system/resources/thumbnails/014/468/621/small/abstract-digital-technology-background-with-concept-security-vector.jpg);
+         background-size:cover;
+         
+      }
+      .style{
+        margin-top:200px;
+        padding:30px 80px;
+        
+        width:100px;
+        position:relative;
+        top:60px;
+        right:300px;
+
+      }
+      .input{
+        position:relative;
+        bottom:50px;
+        right:40px;
+        
+        
+        
+      }
+    </style>
+    </head>
+    <center>
+      
+    
+    
+  <body class="image">
+    
+  
+    
+  <form class="style">
+    <h1 style="position:relative;bottom:50px;color:white">Login</h1>
+      
+    <div class="input">
+      
+    
+    <input type="text" placeholder="username" id="UN" style="padding:10px;border-radius:50px;margin-bottom:10px"/><br>
+    <input type="password" placeholder="password" id="PW" style="padding:10px;border-radius:50px;margin-bottom:10px"<br>
+    <button onclick="login()" style="padding:10px;border-radius:50px;margin:10px 10px 10px 60px;background-color:white;color:black">submit</button>
+  </form>
+    <script>
+      function login(){
+        let x=document.getElementById('UN').value;
+        let y=document.getElementById('PW').value;
+        
+        if(x=="charlie" && y==8978){
+        alert("Entered Information is correct and Continue your transition")
+      
+             
+         let amount=15000
+         alert("A/C Holder Name:Siva Kumar" + amount)
+         
+        let debit=+prompt("Enter The Amount")
+
+        if(debit<=15000){
+           res=amount-debit
+           alert("Remaining Amount:" + res )
+
+         }
+         else if(debit>=15000){
+           alert("Insufficient Amount")
+         }
+         else{
+           alert("Enter Valid Amount")
+         }
+        
+        }
+      else{
+        alert("Entered details are invalid")
+      }
+      
+      
+
+
+    }     
+
+    </script>
+  </body>
+  </center>
+  

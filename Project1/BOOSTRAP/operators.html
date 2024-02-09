@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>operators</title>
+</head>
+<body>
+    
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="result()">click</button>
+    <p id="res1"></p>
+
+<script>
+  function result(){
+    let x=document.getElementById('num1').value;
+    
+    let y=document.getElementById('num2').value;
+    let xvalue=parseInt(x);
+    let yvalue=parseInt(y);
+    const  res=xvalue<=0 && yvalue>30;
+    document.getElementById('res1').innerHTML= res;
+  }
+</script>
+</body>
+</html>
